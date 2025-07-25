@@ -9,5 +9,6 @@ public class EventmanagementApplication {
     public static void main(String[] args) {
         SpringApplication.run(EventmanagementApplication.class, args);
     }
+    //test
 
 }
