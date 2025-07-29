@@ -34,7 +34,7 @@ public class StartupRunner {
         this.eventRepository = eventRepository;
         this.ticketRepository = ticketRepository;
         this.benutzerRepository = benutzerRepository;
-        this.konzertRepository = konzertRepository;
+        this.konzertRepository = konzertRepository;//testkommentar
     }
 
     @PostConstruct
