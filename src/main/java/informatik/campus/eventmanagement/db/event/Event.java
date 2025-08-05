@@ -18,6 +18,7 @@ public abstract class Event {
     protected String titel;
     protected LocalDateTime datum;
     protected String ort;
+    protected String bildURL;
     @ManyToMany(cascade = CascadeType.REFRESH,  fetch = FetchType.LAZY)
     @JsonManagedReference
     @JoinTable(name = "sponsor_id",
@@ -28,10 +29,11 @@ public abstract class Event {
     public Event() {
     }
 
-    public Event(String titel, LocalDateTime datum, String ort) {
+    public Event(String titel, LocalDateTime datum, String ort, String bildURL) {
         this.titel = titel;
         this.datum = datum;
         this.ort = ort;
+        this.bildURL = bildURL;
     }
 
     public String getTitel() {
@@ -66,6 +68,17 @@ public abstract class Event {
         this.sponsoren = sponsoren;
     }
 
+    public long getId() {
+        return id;
+    }
+
+    public String getBildURL() {
+        return bildURL;
+    }
+
+    public void setBildURL(String bildURL) {
+        this.bildURL = bildURL;
+    }
 
     @Override
     public String toString() {

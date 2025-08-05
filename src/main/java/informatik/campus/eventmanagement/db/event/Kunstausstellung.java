@@ -8,14 +8,14 @@ public class Kunstausstellung extends Event{
     private String stilrichtung;
     private String kuenstler;
 
-    public Kunstausstellung(String titel, LocalDateTime datum, String ort, String stilrichtung, String kuenstler) {
-        super(titel, datum, ort);
+    public Kunstausstellung(String titel, LocalDateTime datum, String ort, String bildURL, String stilrichtung, String kuenstler) {
+        super(titel, datum, ort, bildURL);
         this.stilrichtung = stilrichtung;
         this.kuenstler = kuenstler;
     }
 
     public Kunstausstellung() {
-        
+
     }
 
     public String getKuenstler() {
