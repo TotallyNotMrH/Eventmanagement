@@ -1,7 +1,9 @@
 package informatik.campus.eventmanagement.db.event;
 
-import java.time.LocalDateTime;
+import jakarta.persistence.Entity;
 
+import java.time.LocalDateTime;
+@Entity
 public class Kunstausstellung extends Event{
     private String stilrichtung;
     private String kuenstler;
@@ -10,6 +12,10 @@ public class Kunstausstellung extends Event{
         super(titel, datum, ort);
         this.stilrichtung = stilrichtung;
         this.kuenstler = kuenstler;
+    }
+
+    public Kunstausstellung() {
+        
     }
 
     public String getKuenstler() {

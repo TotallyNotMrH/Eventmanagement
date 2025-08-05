@@ -15,9 +15,6 @@ public class Sponsor {
     private int id;
     private String firmenname;
     private double gezahlterBetrag;
-    @ManyToMany(mappedBy = "sponsoren", fetch =  FetchType.LAZY)
-    @JsonBackReference //Ohne das und das Gegenstück in Event bekommen wir eine Endlos-Schleife
-    private Set<Event> events;
     public Sponsor() {}
     public Sponsor(String firmename, double gezahlterBetrag) {
         this.firmenname = firmename;
@@ -38,14 +35,6 @@ public class Sponsor {
 
     public void setGezahlterBetrag(double gezahlterBetrag) {
         this.gezahlterBetrag = gezahlterBetrag;
-    }
-
-    public Set<Event> getEvents() {
-        return events;
-    }
-
-    public void setEvents(Set<Event> events) {
-        this.events = events;
     }
 
     @Override
