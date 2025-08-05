@@ -9,8 +9,8 @@ public class Konzert extends Event {
     private String bandName;
     private String genre;
 
-    public Konzert(String titel, LocalDateTime datum, String ort, String bandName, String genre) {
-        super(titel, datum, ort);
+    public Konzert(String titel, LocalDateTime datum, String ort, String bildURL, String bandName, String genre) {
+        super(titel, datum, ort, bildURL);
         this.bandName = bandName;
         this.genre = genre;
     }
