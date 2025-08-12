@@ -11,7 +11,7 @@
     <groupId>informatik.campus</groupId>
     <artifactId>Eventmanagement</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>Eventmanagement</name>
     <description>Eventmanagement</description>
     <url/>
